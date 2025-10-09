@@ -1,0 +1,22 @@
+accelerate==1.2.1
+click
+clip @ git+https://github.com/openai/CLIP.git
+datasets==3.0.2
+deepspeed==0.15.4
+diffusers==0.32.0
+dotenv
+hpsv2
+image-reward
+peft==0.13.2
+tensorboard
+tensorboardX
+transformers==4.47.1
+
+# mturk
+boto3
+pandas
+python-dotenv
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+torchvision==0.18.1

@@ -1,0 +1,7 @@
+__pycache__
+.python-version
+
+# Dataset files
+data
+# Training logs
+logs
