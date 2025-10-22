@@ -1,5 +1,5 @@
 <h1 align="center">
-  Ranking-based Preference Optimization </br> for Diffusion Models from Implicit User Feedback
+  [NeurIPS 2025] Ranking-based Preference Optimization </br> for Diffusion Models from Implicit User Feedback
 </h1>
 
 This is the official implementation of the paper, *Ranking-based Preference Optimization for Diffusion Models from Implicit User Feedback*.
@@ -112,6 +112,19 @@ Calculate PickScore, HPSv2, Aesthetic Score, CLIP Score, and ImageReward for the
         --pickscore --hpsv2 --aestheticv1 --clip --imagereward \
         --dir ./output/hpdv2_benchmark
     ```
+
+## Citation
+```
+@misc{wu2025rankingbasedpreferenceoptimizationdiffusion,
+      title={Ranking-based Preference Optimization for Diffusion Models from Implicit User Feedback},
+      author={Yi-Lun Wu and Bo-Kai Ruan and Chiang Tseng and Hong-Han Shuai},
+      year={2025},
+      eprint={2510.18353},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.18353},
+}
+```
 
 ## LICENSE
 This model is a fine-tuned version of Stable Diffusion, released under the CreativeML Open RAIL-M License.
