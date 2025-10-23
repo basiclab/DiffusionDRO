@@ -1,0 +1,23 @@
+services:
+  gradio:
+    build: .
+    container_name: gradio
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NUM_INFERENCE_STEPS=20
+      - GUIDANCE_SCALE=7.5
+      - ROOT_PATH=/gradio
+    ports:
+      - "5678:5678"
+    restart: unless-stopped
+    volumes:
+      - hf_cache:/root/.cache/huggingface/hub
+
+volumes:
+  hf_cache:
