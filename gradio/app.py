@@ -77,6 +77,9 @@ def main():
             label="Example Prompts",
             examples_per_page=2,
         )
+        gr.Markdown("⚠️ **Safety Notice:** This demo uses the built-in Safety Checker. "
+                    "If the generated image appears completely black, it means the content "
+                    "was detected as sensitive and has been automatically blocked.")
         with gr.Row():
             generate_btn = gr.Button("Generate 🚀")
         with gr.Row():

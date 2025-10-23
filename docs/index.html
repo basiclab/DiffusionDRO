@@ -75,6 +75,13 @@
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
 
+  <style>
+    .has-gradient-text {
+      background: linear-gradient(90deg, #1e90ff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
 <body>
 
@@ -90,41 +97,37 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- Replace with your paper title -->
-            <h2 class="title is-1 publication-title">Ranking-based Preference Optimization for Diffusion Models from Implicit User Feedback</h2>
+            <h2 class="title is-1 publication-title">
+              <span class="has-gradient-text">DiffusionDRO: </span>
+              <span>Preference Optimization for Diffusion Models from Implicit User Feedback</span>
+            </h2>
             <div class="is-size-5 publication-authors">
               <!-- Replace with your paper authors and their personal links -->
               <span class="author-block">
-                Yi-Lun Wu,
+                <a href="https://github.com/w86763777" target="_blank">Yi-Lun Wu</a>,
               </span>
               <span class="author-block">
-                Bo-Kai Ruan,
+                <a href="https://github.com/justin900429" target="_blank">Bo-Kai Ruan</a>,
               </span>
               <span class="author-block">
                 Chiang Tseng,
               </span>
               <span class="author-block">
-                Hong-Han Shuai
+                <a href="https://basiclab.lab.nycu.edu.tw" target="_blank">Hong-Han Shuai</a>
               </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-                <span class="author-block">National Yang Ming Chiao Tung University<br>NeurIPS 2025</span>
+              <br>
+              <span class="author-block">
+                National Yang Ming Chiao Tung University
+              </span>
+              <br>
+              <br>
+              <span class="title">
+                NeurIPS 2025
+              </span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-
-                <!-- Replace with your GitHub repository URL -->
                 <span class="link-block">
                   <a href="https://github.com/basiclab/DiffusionDRO" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -132,6 +135,24 @@
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2510.18353" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/ylwu/diffusion-dro-sd1.5" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">🤗</span>
+                    <span>Model</span>
                   </a>
                 </span>
               </div>
@@ -204,12 +225,17 @@
     <div class="hero-body">
       <div class="container">
         <h2 class="title">Playground</h2>
-        <iframe
-          src="https://basiclun.duckdns.org/gradio/"
-          width="100%"
-          height="800px"
-          frameborder="0">
-        </iframe>
+        <div style="width: 100%; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+          <div class="iframe-wrapper" style="border-radius: 1rem; overflow: hidden;">
+            <iframe
+              src="https://basiclun.duckdns.org/gradio/"
+              width="100%"
+              height="800px"
+              frameborder="0"
+              style="border:0; display:block;">
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
