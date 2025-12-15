@@ -16,6 +16,16 @@ pip install -r requirements.txt
 
 ## Datasets
 
+The preprocessed datasets can be downloaded from Google Drive:
+- Training sets:
+  - [Pick-a-Pic v2 selected by PickScore (top-500)](https://drive.google.com/file/d/1cbj-T6qp1L_GpBSI36RmT5Unu2Es37zG/view?usp=sharing)
+  - [Pick-a-Pic v2 selected by HPSv2 (top-500)](https://drive.google.com/file/d/1WqiMkiuiiOCDLXNU7tNBVU39qXsdLZYr/view?usp=sharing)
+- Test sets:
+  - [Pick-a-Pic v2 test set](https://drive.google.com/file/d/1WmG0OTC9x7SA5WiX6dfaLRGnB-Ab-3yg/view?usp=sharing)
+  - [HPDv2 benchmark set](https://drive.google.com/file/d/1tYRwiJ5BoFmj45pMwjPsiQ9c6qgXMK3P/view?usp=sharing)
+
+Alternatively, you can preprocess the datasets by following the instructions below.
+
 <details>
 <summary>Pick-a-Pic v2</summary>
 
